@@ -54,7 +54,7 @@ int main() {
 
         if (index < inventoryV.size()) {
             entry m = inventoryV[index];
-            if (e.upper < m.lower) {
+            if (e.upper + 1 < m.lower) {
                 inventoryV.insert(inventoryV.begin() + index, e);
             }
             else {
